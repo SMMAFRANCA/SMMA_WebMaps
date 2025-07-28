@@ -224,11 +224,11 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Código do Município</th>\
-                        <td>' + (feature.properties['Código do Município'] !== null ? autolinker.link(String(feature.properties['Código do Município']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['GEOCODIGO'] !== null ? autolinker.link(String(feature.properties['GEOCODIGO']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">Nome do Município</th>\
-                        <td>' + (feature.properties['Nome do Município'] !== null ? autolinker.link(String(feature.properties['Nome do Município']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['MUNICIPIO'] !== null ? autolinker.link(String(feature.properties['MUNICIPIO']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">UF</th>\
@@ -236,11 +236,11 @@
                     </tr>\
                     <tr>\
                         <th scope="row">Área (ha)</th>\
-                        <td>' + (feature.properties['Área (ha)'] !== null ? autolinker.link(String(feature.properties['Área (ha)']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['AREA_HA'] !== null ? autolinker.link(String(feature.properties['AREA_HA']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">Área (km²)</th>\
-                        <td>' + (feature.properties['Área (km²)'] !== null ? autolinker.link(String(feature.properties['Área (km²)']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['AREA_KM2'] !== null ? autolinker.link(String(feature.properties['AREA_KM2']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
