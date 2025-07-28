@@ -174,15 +174,15 @@
         function pop_LimiteMunicipaldeFranca_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">CD_MUN</th>\
+                        <th scope="row">Código do Município</th>\
                         <td>' + (feature.properties['CD_MUN'] !== null ? autolinker.link(String(feature.properties['CD_MUN']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">NM_MUN</th>\
-                        <td>' + (feature.properties['NM_MUN'] !== null ? autolinker.link(String(feature.properties['NM_MUN']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Nome do Município'] !== null ? autolinker.link(String(feature.properties['NM_MUN']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">AREA_KM2</th>\
+                        <th scope="row">Área (km²)</th>\
                         <td>' + (feature.properties['AREA_KM2'] !== null ? autolinker.link(String(feature.properties['AREA_KM2']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
